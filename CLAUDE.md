@@ -33,7 +33,7 @@ Pentazein is a B2B landing page for a garment manufacturing company, built with 
 Tailwind CSS with a custom brand palette defined via CSS variables in `src/index.css`. Key design tokens:
 - **Primary:** Dark teal (160 35% 12%)
 - **Brand/Accent:** Green (145 45% 38%)
-- **Fonts:** Space Grotesk (headings), Inter (body)
+- **Fonts:** Outfit (headings), Work Sans (body)
 - **Border radius:** 0.25rem
 
 Custom utility classes defined in `index.css`: `.section-padding`, `.container-max`, `.text-gradient-brand`, `.bg-hero`, `.bg-section-dark`, `.brand-line`, `.brand-line-long`.

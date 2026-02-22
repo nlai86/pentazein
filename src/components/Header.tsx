@@ -4,8 +4,8 @@ import pentazeinLogo from "@/assets/pentazein_logo-2.svg";
 const navLinks = [
   { label: "Home", href: "#home" },
   { label: "Products", href: "#products" },
-  { label: "About", href: "#about" },
-  { label: "Contact", href: "#contact" },
+  { label: "About Us", href: "#about" },
+  { label: "Contact Us", href: "#contact" },
 ];
 
 const Header = () => {
@@ -28,7 +28,7 @@ const Header = () => {
     >
       <div className="container-max flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3">
-          <img src={pentazeinLogo} alt="Pentazein" className="h-[150px] w-auto" />
+          <img src={pentazeinLogo} alt="Pentazein" className="h-[100px] md:h-[150px] w-auto" />
         </a>
 
         {/* Desktop Nav */}
@@ -37,7 +37,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-[hsl(var(--nav-foreground)/0.8)] hover:text-[hsl(var(--nav-foreground))] text-sm font-medium tracking-widest uppercase transition-colors duration-300"
+              className="text-[hsl(var(--nav-foreground)/0.8)] hover:text-[hsl(var(--nav-foreground))] text-sm font-heading font-medium tracking-widest uppercase transition-colors duration-300"
             >
               {link.label}
             </a>
@@ -67,7 +67,7 @@ const Header = () => {
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-[hsl(var(--nav-foreground)/0.8)] hover:text-[hsl(var(--nav-foreground))] text-sm font-medium tracking-widest uppercase py-2"
+                className="text-[hsl(var(--nav-foreground)/0.8)] hover:text-[hsl(var(--nav-foreground))] text-sm font-heading font-medium tracking-widest uppercase py-2 transition-colors duration-300"
               >
                 {link.label}
               </a>

@@ -19,7 +19,7 @@ const Footer = () => {
               <img
                 src={pentazeinLogo}
                 alt="Pentazein"
-                className="h-[150px] w-auto opacity-80 mb-4"
+                className="h-[100px] md:h-[150px] w-auto opacity-80 mb-4"
               />
             </a>
           </div>
@@ -58,7 +58,7 @@ const Footer = () => {
                 <a
                   key={link.href}
                   href={link.href}
-                  className="text-[hsl(var(--nav-foreground)/0.5)] hover:text-[hsl(var(--nav-foreground))] text-xs tracking-wider transition-colors duration-300"
+                  className="text-[hsl(var(--nav-foreground)/0.5)] hover:text-[hsl(var(--nav-foreground))] text-xs font-heading tracking-widest uppercase transition-colors duration-300"
                 >
                   {link.label}
                 </a>
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
         <div className="mt-10 pt-8 border-t border-[hsl(var(--nav-foreground)/0.1)] text-center">
           <p className="text-[hsl(var(--nav-foreground)/0.3)] text-xs tracking-wider">
-            © 2025 Pentazein. All Rights Reserved.
+            © {new Date().getFullYear()} Pentazein. All Rights Reserved.
           </p>
         </div>
       </div>

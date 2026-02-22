@@ -43,7 +43,7 @@ const ProductsSection = () => {
       <div className="container-max">
         <div className="text-center mb-16">
           <div className="brand-line mx-auto mb-6" />
-          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-section-dark-foreground leading-tight mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-section-dark-foreground leading-tight mb-6">
             What We Manufacture
           </h2>
           <p className="text-section-dark-foreground/60 text-lg max-w-2xl mx-auto">
