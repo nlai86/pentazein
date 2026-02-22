@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import pentazeinLogo from "@/assets/pentazein_logo.svg";
+import pentazeinLogo from "@/assets/pentazein_logo-2.svg";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -28,7 +28,7 @@ const Header = () => {
     >
       <div className="container-max flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3">
-          <img src={pentazeinLogo} alt="Pentazein" className="h-10 w-auto brightness-0 invert" />
+          <img src={pentazeinLogo} alt="Pentazein" className="h-10 w-auto" />
         </a>
 
         {/* Desktop Nav */}

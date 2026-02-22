@@ -14,7 +14,7 @@ const ContactSection = () => {
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24">
           {/* Left copy */}
           <div className="flex flex-col justify-center">
-            <div className="gold-line mb-6" />
+            <div className="brand-line mb-6" />
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
               Let's Manufacture{" "}
               <span className="text-secondary">Together</span>
@@ -97,7 +97,7 @@ const ContactSection = () => {
                 </div>
                 <button
                   type="submit"
-                  className="w-full md:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 bg-primary text-primary-foreground font-heading font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:bg-navy-light hover:shadow-lg"
+                  className="w-full md:w-auto inline-flex items-center justify-center gap-3 px-10 py-4 bg-primary text-primary-foreground font-heading font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:bg-dark-light hover:shadow-lg"
                 >
                   Request Manufacturing Quote
                   <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">

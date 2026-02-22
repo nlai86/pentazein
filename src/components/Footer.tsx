@@ -1,4 +1,4 @@
-import pentazeinLogo from "@/assets/pentazein_logo.svg";
+import pentazeinLogo from "@/assets/pentazein_logo-2.svg";
 
 const navLinks = [
   { label: "Home", href: "#home" },
@@ -11,10 +11,10 @@ const Footer = () => {
   return (
     <footer className="bg-primary py-12">
       <div className="container-max">
-        <div className="gold-line-long mb-10" />
+        <div className="brand-line-long mb-10" />
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <a href="#home">
-            <img src={pentazeinLogo} alt="Pentazein" className="h-8 w-auto brightness-0 invert opacity-60" />
+            <img src={pentazeinLogo} alt="Pentazein" className="h-8 w-auto opacity-80" />
           </a>
           <nav className="flex items-center gap-8">
             {navLinks.map((link) => (

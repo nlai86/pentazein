@@ -6,44 +6,44 @@
 
 @layer base {
   :root {
-    --background: 220 20% 97%;
-    --foreground: 220 30% 12%;
+    --background: 150 10% 97%;
+    --foreground: 160 30% 10%;
 
     --card: 0 0% 100%;
-    --card-foreground: 220 30% 12%;
+    --card-foreground: 160 30% 10%;
 
     --popover: 0 0% 100%;
-    --popover-foreground: 220 30% 12%;
+    --popover-foreground: 160 30% 10%;
 
-    --primary: 220 40% 13%;
-    --primary-foreground: 42 50% 90%;
+    --primary: 160 35% 12%;
+    --primary-foreground: 150 30% 92%;
 
-    --secondary: 42 40% 52%;
-    --secondary-foreground: 220 40% 13%;
+    --secondary: 145 45% 38%;
+    --secondary-foreground: 0 0% 100%;
 
-    --muted: 220 15% 92%;
-    --muted-foreground: 220 10% 45%;
+    --muted: 150 10% 92%;
+    --muted-foreground: 160 10% 45%;
 
-    --accent: 42 40% 52%;
-    --accent-foreground: 220 40% 13%;
+    --accent: 145 45% 38%;
+    --accent-foreground: 0 0% 100%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 15% 88%;
-    --input: 220 15% 88%;
-    --ring: 42 40% 52%;
+    --border: 150 12% 88%;
+    --input: 150 12% 88%;
+    --ring: 145 45% 38%;
 
     --radius: 0.25rem;
 
-    --hero-gradient: linear-gradient(135deg, hsl(220 40% 10%) 0%, hsl(220 35% 18%) 50%, hsl(220 30% 22%) 100%);
-    --gold-gradient: linear-gradient(135deg, hsl(42 50% 48%) 0%, hsl(42 60% 60%) 50%, hsl(42 50% 48%) 100%);
-    --section-dark: 220 35% 8%;
-    --section-dark-foreground: 220 15% 85%;
-    --gold: 42 40% 52%;
-    --gold-light: 42 50% 70%;
-    --navy: 220 40% 13%;
-    --navy-light: 220 30% 22%;
+    --hero-gradient: linear-gradient(135deg, hsl(160 35% 8%) 0%, hsl(160 30% 15%) 50%, hsl(155 25% 18%) 100%);
+    --brand-gradient: linear-gradient(135deg, hsl(145 45% 32%) 0%, hsl(145 50% 45%) 50%, hsl(145 45% 32%) 100%);
+    --section-dark: 160 35% 7%;
+    --section-dark-foreground: 150 12% 85%;
+    --brand: 145 45% 38%;
+    --brand-light: 145 40% 55%;
+    --dark: 160 35% 12%;
+    --dark-light: 160 25% 20%;
 
     --font-heading: 'Space Grotesk', sans-serif;
     --font-body: 'Inter', sans-serif;
@@ -59,25 +59,25 @@
   }
 
   .dark {
-    --background: 220 30% 6%;
-    --foreground: 220 15% 90%;
-    --card: 220 30% 10%;
-    --card-foreground: 220 15% 90%;
-    --popover: 220 30% 10%;
-    --popover-foreground: 220 15% 90%;
-    --primary: 42 50% 60%;
-    --primary-foreground: 220 40% 10%;
-    --secondary: 220 30% 18%;
-    --secondary-foreground: 220 15% 90%;
-    --muted: 220 25% 15%;
-    --muted-foreground: 220 10% 55%;
-    --accent: 42 40% 52%;
-    --accent-foreground: 220 40% 10%;
+    --background: 160 30% 6%;
+    --foreground: 150 12% 90%;
+    --card: 160 30% 10%;
+    --card-foreground: 150 12% 90%;
+    --popover: 160 30% 10%;
+    --popover-foreground: 150 12% 90%;
+    --primary: 145 45% 50%;
+    --primary-foreground: 160 35% 8%;
+    --secondary: 160 30% 18%;
+    --secondary-foreground: 150 12% 90%;
+    --muted: 160 25% 15%;
+    --muted-foreground: 150 10% 55%;
+    --accent: 145 45% 38%;
+    --accent-foreground: 0 0% 100%;
     --destructive: 0 62.8% 30.6%;
     --destructive-foreground: 210 40% 98%;
-    --border: 220 25% 18%;
-    --input: 220 25% 18%;
-    --ring: 42 40% 52%;
+    --border: 160 25% 18%;
+    --input: 160 25% 18%;
+    --ring: 145 45% 38%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -113,8 +113,8 @@
     @apply max-w-[1200px] mx-auto px-5 md:px-8;
   }
 
-  .text-gradient-gold {
-    background: var(--gold-gradient);
+  .text-gradient-brand {
+    background: var(--brand-gradient);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -129,17 +129,17 @@
     color: hsl(var(--section-dark-foreground));
   }
 
-  .border-gold {
-    border-color: hsl(var(--gold));
+  .border-brand {
+    border-color: hsl(var(--brand));
   }
 
-  .gold-line {
+  .brand-line {
     @apply h-px w-16;
-    background: var(--gold-gradient);
+    background: var(--brand-gradient);
   }
 
-  .gold-line-long {
+  .brand-line-long {
     @apply h-px w-full;
-    background: linear-gradient(90deg, transparent, hsl(var(--gold)), transparent);
+    background: linear-gradient(90deg, transparent, hsl(var(--brand)), transparent);
   }
 }

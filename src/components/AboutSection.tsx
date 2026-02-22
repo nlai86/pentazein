@@ -6,7 +6,7 @@ const AboutSection = () => {
       <div className="container-max">
         <div className="grid lg:grid-cols-2 gap-16 lg:gap-24 items-center">
           <div>
-            <div className="gold-line mb-6" />
+            <div className="brand-line mb-6" />
             <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight mb-6">
               Built on Decades of{" "}
               <span className="text-secondary">Manufacturing Excellence</span>
@@ -24,7 +24,7 @@ const AboutSection = () => {
                 { title: "Rapid Prototyping", desc: "Sample turnaround in 5-7 days" },
                 { title: "Global Logistics", desc: "FOB, CIF, and DDP shipping" },
               ].map((item) => (
-                <div key={item.title} className="border-l-2 border-gold pl-4">
+                <div key={item.title} className="border-l-2 border-brand pl-4">
                   <h3 className="font-heading font-semibold text-foreground text-sm mb-1">
                     {item.title}
                   </h3>
