@@ -26,7 +26,7 @@ const ProductsSection = () => {
     <section id="products" className="section-padding bg-section-dark">
       <div className="container-max">
         <div className="text-center mb-16">
-          <div className="gold-line mx-auto mb-6" />
+          <div className="brand-line mx-auto mb-6" />
           <h2 className="font-heading text-3xl md:text-4xl lg:text-5xl font-bold text-section-dark-foreground leading-tight mb-4">
             Manufacturing Capabilities
           </h2>
@@ -39,7 +39,7 @@ const ProductsSection = () => {
           {products.map((product) => (
             <div
               key={product.title}
-              className="bg-section-dark p-10 md:p-12 group hover:bg-navy-light transition-colors duration-500"
+              className="bg-section-dark p-10 md:p-12 group hover:bg-dark-light transition-colors duration-500"
             >
               <h3 className="font-heading text-xl md:text-2xl font-semibold text-section-dark-foreground mb-3">
                 {product.title}
@@ -51,7 +51,7 @@ const ProductsSection = () => {
                 {product.features.map((feature) => (
                   <span
                     key={feature}
-                    className="text-xs tracking-wider uppercase px-3 py-1.5 border border-gold/30 text-gold-light"
+                    className="text-xs tracking-wider uppercase px-3 py-1.5 border border-brand/30 text-brand-light"
                   >
                     {feature}
                   </span>
