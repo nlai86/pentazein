@@ -22,13 +22,13 @@ const Header = () => {
     <header
       className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 ${
         scrolled
-          ? "bg-primary/95 backdrop-blur-md shadow-lg py-3"
+          ? "bg-[hsl(var(--nav-bg)/0.95)] backdrop-blur-md shadow-lg py-3"
           : "bg-transparent py-6"
       }`}
     >
       <div className="container-max flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3">
-          <img src={pentazeinLogo} alt="Pentazein" className="h-10 w-auto" />
+          <img src={pentazeinLogo} alt="Pentazein" className="h-24 w-auto" />
         </a>
 
         {/* Desktop Nav */}
@@ -37,7 +37,7 @@ const Header = () => {
             <a
               key={link.href}
               href={link.href}
-              className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium tracking-widest uppercase transition-colors duration-300"
+              className="text-[hsl(var(--nav-foreground)/0.8)] hover:text-[hsl(var(--nav-foreground))] text-sm font-medium tracking-widest uppercase transition-colors duration-300"
             >
               {link.label}
             </a>
@@ -46,7 +46,7 @@ const Header = () => {
 
         {/* Mobile toggle */}
         <button
-          className="md:hidden text-primary-foreground"
+          className="md:hidden text-[hsl(var(--nav-foreground))]"
           onClick={() => setMenuOpen(!menuOpen)}
           aria-label="Toggle menu"
         >
@@ -60,14 +60,14 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {menuOpen && (
-        <nav className="md:hidden bg-primary/98 backdrop-blur-md border-t border-primary-foreground/10 mt-3">
+        <nav className="md:hidden bg-[hsl(var(--nav-bg)/0.98)] backdrop-blur-md border-t border-[hsl(var(--nav-foreground)/0.1)] mt-3">
           <div className="container-max py-6 flex flex-col gap-4">
             {navLinks.map((link) => (
               <a
                 key={link.href}
                 href={link.href}
                 onClick={() => setMenuOpen(false)}
-                className="text-primary-foreground/80 hover:text-primary-foreground text-sm font-medium tracking-widest uppercase py-2"
+                className="text-[hsl(var(--nav-foreground)/0.8)] hover:text-[hsl(var(--nav-foreground))] text-sm font-medium tracking-widest uppercase py-2"
               >
                 {link.label}
               </a>
