@@ -28,7 +28,7 @@ const Header = () => {
     >
       <div className="container-max flex items-center justify-between">
         <a href="#home" className="flex items-center gap-3">
-          <img src={pentazeinLogo} alt="Pentazein" className="h-24 w-auto" />
+          <img src={pentazeinLogo} alt="Pentazein" className="h-[150px] w-auto" />
         </a>
 
         {/* Desktop Nav */}

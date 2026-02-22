@@ -40,26 +40,6 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Bottom stats bar */}
-      <div className="absolute bottom-0 left-0 right-0 border-t border-primary-foreground/10">
-        <div className="container-max py-8 grid grid-cols-2 md:grid-cols-4 gap-8">
-          {[
-            { value: "20+", label: "Years Experience" },
-            { value: "50M+", label: "Units Annually" },
-            { value: "30+", label: "Countries Served" },
-            { value: "ISO", label: "9001 Certified" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center md:text-left">
-              <div className="font-heading text-2xl md:text-3xl font-bold text-gradient-brand">
-                {stat.value}
-              </div>
-              <div className="text-primary-foreground/50 text-xs tracking-widest uppercase mt-1">
-                {stat.label}
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
     </section>
   );
 };
