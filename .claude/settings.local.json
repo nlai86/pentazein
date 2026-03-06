@@ -1,7 +1,8 @@
 {
   "permissions": {
     "allow": [
-      "WebFetch(domain:nlai86.github.io)"
+      "WebFetch(domain:nlai86.github.io)",
+      "Bash(npm audit:*)"
     ]
   }
 }
