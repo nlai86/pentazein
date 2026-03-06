@@ -56,7 +56,7 @@ const ProductsSection = () => {
           {products.map((product) => (
             <div
               key={product.title}
-              className="bg-section-dark p-10 md:p-12 group hover:bg-dark-light transition-colors duration-500"
+              className="bg-section-dark p-10 md:p-12"
             >
               <h3 className="font-heading text-xl md:text-2xl font-semibold text-section-dark-foreground mb-3">
                 {product.title}
