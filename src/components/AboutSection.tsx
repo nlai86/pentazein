@@ -11,7 +11,7 @@ const AboutSection = () => {
               About <span className="text-secondary">Us</span>
             </h2>
             <p className="text-muted-foreground text-lg leading-relaxed mb-4">
-              At Pentazein, we don't just make garments – we create clothing
+              At Pentazein, we don't just make garments. We create clothing
               solutions that combine comfort, durability, and style. With our own
               manufacturing facility in Pakistan, we bring ideas to life through
               fabrics and designs that meet the diverse needs of our customers.
