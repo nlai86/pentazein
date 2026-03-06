@@ -17,7 +17,7 @@ const ContactSection = () => {
             </p>
             <div className="space-y-6 text-sm text-muted-foreground">
               <div>
-                <h3 className="font-heading font-semibold text-foreground text-xs tracking-widest uppercase mb-3">
+                <h3 className="font-heading font-semibold text-foreground text-base tracking-widest uppercase mb-3">
                   Manufacturing Site
                 </h3>
                 <a href="https://maps.google.com/?q=212,+3-KM,+Main+Defense+Road,+Lahore,+Pakistan" target="_blank" rel="noopener noreferrer" className="flex items-start gap-3 hover:text-foreground transition-colors">
@@ -45,10 +45,10 @@ const ContactSection = () => {
                 +92-340-0055555
               </a>
               <div className="pt-4 border-t border-border">
-                <h3 className="font-heading font-semibold text-foreground text-xs tracking-widest uppercase mb-3">
+                <h3 className="font-heading font-semibold text-foreground text-base tracking-widest uppercase mb-3">
                   Key Contacts
                 </h3>
-                <div className="space-y-4">
+                <div className="space-y-4 md:space-y-0 md:grid md:grid-cols-2 md:gap-6">
                   <div>
                     <p className="text-foreground font-medium">Yahya Sohail</p>
                     <p className="text-xs text-muted-foreground">Business Partner</p>
@@ -106,7 +106,7 @@ const ContactSection = () => {
 
           {/* Client testimonials */}
           <div id="testimonials" className="flex flex-col gap-6">
-            <h3 className="font-heading text-xs tracking-widest uppercase font-semibold text-muted-foreground">
+            <h3 className="font-heading text-base tracking-widest uppercase font-semibold text-muted-foreground">
               What Our Clients Say
             </h3>
             {[
