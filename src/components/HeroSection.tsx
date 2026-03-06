@@ -26,17 +26,6 @@ const HeroSection = () => {
             End-to-end apparel production with uncompromising quality standards,
             scalable capacity, and international compliance.
           </p>
-          <div className="animate-fade-in-up" style={{ animationDelay: "0.4s" }}>
-            <a
-              href="#contact"
-              className="inline-flex items-center gap-3 px-8 py-4 bg-secondary text-secondary-foreground font-heading font-semibold text-sm tracking-widest uppercase transition-all duration-300 hover:brightness-110 hover:shadow-lg hover:shadow-secondary/20"
-            >
-              Request Manufacturing Quote
-              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-                <path d="M5 12h14M12 5l7 7-7 7" />
-              </svg>
-            </a>
-          </div>
         </div>
       </div>
 
